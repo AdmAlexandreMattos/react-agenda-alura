@@ -17,7 +17,6 @@ const Filtro: React.FC = () => {
       filtro.data = null;
     }
     setFiltroEvento(filtro);
-    setData("");
   };
 
   return (
