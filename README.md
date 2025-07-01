@@ -1,46 +1,53 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📅 React Agenda com Recoil
 
-## Available Scripts
+Projeto desenvolvido durante o curso de React da **Alura**, com foco na gestão de estado utilizando o **Recoil**.
 
-In the project directory, you can run:
+🔗 [Curso de React: gerenciando estado com Recoil](https://cursos.alura.com.br/course/react-gerenciando-estado-recoil)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 👨‍🏫 Instrutor
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Vinicios Neves**  
+Tech Lead e Educador com mais de uma década de experiência, especialista em TypeScript e liderança de times full-stack. Atua como professor na FIAP e Alura, unindo código e didática como poucos.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Rodando o Projeto Localmente
 
-### `npm run build`
+```bash
+# Clone o repositório
+git clone https://github.com/AdmAlexandreMattos/react-agenda-alura.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Acesse a pasta do projeto
+cd react-agenda-alura
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Instale as dependências
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Inicie o servidor de desenvolvimento
+npm run dev
+```
 
-### `npm run eject`
+Acesse [http://localhost:5173](http://localhost:5173) no navegador. A aplicação recarrega automaticamente a cada alteração no código.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📚 Recursos e Documentações
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [Vite](https://vitejs.dev/guide/)
+- [React](https://react.dev/)
+- [Recoil](https://recoiljs.org/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 🎓 Sobre o Curso: *React - Gerenciando Estado com Recoil*
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Neste curso você vai:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Projetar uma boa solução de gestão de estado com Recoil  
+- Entender os benefícios do Recoil em aplicações React  
+- Utilizar hooks personalizados para encapsular a lógica de estado  
+- Implementar os principais hooks do Recoil  
+- Comparar Recoil com outras soluções do mercado
