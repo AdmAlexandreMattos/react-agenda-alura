@@ -1,4 +1,3 @@
-
 # 📅 React Agenda com Recoil
 
 Projeto desenvolvido durante o curso de React da **Alura**, com foco na gestão de estado utilizando o **Recoil**.
@@ -17,7 +16,7 @@ Tech Lead e Educador com mais de uma década de experiência, especialista em Ty
 ## 🚀 Rodando o Projeto Localmente
 
 ```bash
-# Clone o repositório
+# Clone o repositório "main", pois o "main-vercel" é uma versão específica para publicar no vercel
 git clone https://github.com/AdmAlexandreMattos/react-agenda-alura.git
 
 # Acesse a pasta do projeto
@@ -28,6 +27,9 @@ npm install
 
 # Inicie o servidor de desenvolvimento
 npm run dev
+
+# Inicie o servidor de base de dados dos eventos
+json-server --watch db.json -p 8080
 ```
 
 Acesse [http://localhost:5173](http://localhost:5173) no navegador. A aplicação recarrega automaticamente a cada alteração no código.
@@ -42,12 +44,12 @@ Acesse [http://localhost:5173](http://localhost:5173) no navegador. A aplicaçã
 
 ---
 
-## 🎓 Sobre o Curso: *React - Gerenciando Estado com Recoil*
+## 🎓 Sobre o Curso: _React - Gerenciando Estado com Recoil_
 
 Neste curso você vai:
 
-- Projetar uma boa solução de gestão de estado com Recoil  
-- Entender os benefícios do Recoil em aplicações React  
-- Utilizar hooks personalizados para encapsular a lógica de estado  
-- Implementar os principais hooks do Recoil  
+- Projetar uma boa solução de gestão de estado com Recoil
+- Entender os benefícios do Recoil em aplicações React
+- Utilizar hooks personalizados para encapsular a lógica de estado
+- Implementar os principais hooks do Recoil
 - Comparar Recoil com outras soluções do mercado
