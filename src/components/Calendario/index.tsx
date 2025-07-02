@@ -7,7 +7,7 @@ import useAtualizarEvento from "../../state/hooks/useAtualizarEvento";
 import useListaEventos from "../../state/hooks/useListaEventos";
 
 interface IKalendEvento {
-  id?: number;
+  id?: string;
   startAt: string;
   endAt: string;
   summary: string;
@@ -25,7 +25,7 @@ const Calendario: React.FC = () => {
       eventosKalend.set(chave, []);
     }
     eventosKalend.get(chave)?.push({
-      id: evento.id,
+      id: String(evento.id), // Garante que o id seja string
       startAt: evento.inicio.toISOString(),
       endAt: evento.fim.toISOString(),
       summary: evento.descricao,
@@ -38,15 +38,14 @@ const Calendario: React.FC = () => {
     kalendEventoAtualizado: CalendarEvent
   ) => {
     const evento = eventos.find(
-      (evento) => evento.descricao === kalendEventoAtualizado.summary
+      (evento) => String(evento.id) === kalendEventoAtualizado.id
     );
     if (evento) {
       const eventoAtualizado = {
         ...evento,
+        inicio: new Date(kalendEventoAtualizado.startAt),
+        fim: new Date(kalendEventoAtualizado.endAt),
       };
-      eventoAtualizado.inicio = new Date(kalendEventoAtualizado.startAt);
-      eventoAtualizado.fim = new Date(kalendEventoAtualizado.endAt);
-
       atualizarEvento(eventoAtualizado);
     }
   };
@@ -54,6 +53,7 @@ const Calendario: React.FC = () => {
   return (
     <div className={style.Container}>
       <Kalend
+        key={eventos.map((e) => e.id).join("-")} // força re-render ao mudar eventos
         events={Object.fromEntries(eventosKalend)}
         initialDate={new Date().toISOString()}
         hourHeight={60}
